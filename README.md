@@ -1,2 +1,2 @@
 ## The repo for my personal website
-(https://diegomiura.github.io/)
+https://diegomiura.github.io/
