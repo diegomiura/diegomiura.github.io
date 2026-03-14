@@ -1,202 +1,390 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<title>Diego Miura</title>
+		<title>Diego Miura | Astrophysics Research and Selected Projects</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, viewport-fit=cover"
+		/>
+			<meta
+				name="description"
+				content="Diego Miura's research-focused personal website featuring astrophysics research, selected scientific software projects, leadership, and coursework."
+			/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,600;6..72,700&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+		<link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<a class="skip-link" href="#main-content">Skip to content</a>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<header class="site-header">
+			<div class="site-shell site-header__inner">
+				<a class="site-mark" href="#top">
+					<span class="site-mark__monogram">DM</span>
+					<span class="site-mark__text">Diego Miura</span>
+				</a>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
+				<button
+					class="nav-toggle"
+					type="button"
+					aria-expanded="false"
+					aria-controls="site-nav"
+					aria-label="Toggle navigation"
+				>
+					<span class="nav-toggle__bars" aria-hidden="true"></span>
+					<span class="nav-toggle__label">Menu</span>
+				</button>
+
+				<nav class="site-nav" id="site-nav" aria-label="Primary">
+					<a href="#about">About</a>
+					<a href="#research">Research</a>
+					<a href="#projects">Projects</a>
+					<a href="#leadership">Leadership</a>
+					<a href="#coursework">Coursework</a>
+				</nav>
+			</div>
+		</header>
+
+		<main id="main-content">
+			<section class="hero" id="top">
+				<div class="site-shell hero__layout">
+					<div class="hero__copy" data-reveal>
+						<p class="eyebrow">Astrophysics | Data Science</p>
 						<h1>Diego Miura</h1>
-						<p>Astrophysics @ Yale<br />
-						<a href="https://www.linkedin.com/in/diego-miura/">LinkedIn</a> | <a href="https://github.com/diegomiura">GitHub</a>.</p>
-					</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">About Me</a></li>
-							<li><a href="#first">Research</a></li>
-							<li><a href="#second">Coursework</a></li>
-							<li><a href="#cta">Projects</a></li>
+						<div class="button-row">
+							<a class="button button--primary" href="#research">Research</a>
+							<a
+								class="button button--secondary"
+								href="assets/docs/Diego_Miura_Resume.pdf"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Download Resume
+							</a>
+							<a
+								class="button button--ghost"
+								href="https://github.com/diegomiura"
+								target="_blank"
+								rel="noreferrer"
+							>
+								GitHub
+							</a>
+							<a
+								class="button button--ghost"
+								href="https://www.linkedin.com/in/diego-miura/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								LinkedIn
+							</a>
+						</div>
+
+						<ul class="hero-facts" aria-label="Academic highlights">
+							<li>Yale University, B.S. Astrophysics</li>
+							<li>DiRAC Institute and Meg Urry Group</li>
+							<li>Published ApJ paper on variability-selected AGN</li>
 						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Hi There!</h2>
-										</header>
-										<p>I am Diego Miura, a 3rd year undergrad at Yale University studying Astrophysics, with Certificates in Data Science and Energy Studies.</p>
-											
-										<p>I am currently working with the DiRAC Institute at the University of Washington to develop and test Hyrax, an Astro-Machine Learning framework, by looking for anomalous and rare objects in large astronomical datasets.</p>
-										
-										<p>I'm also a member of the Meg Urry Lab here at Yale, and my research involves doing near-infrared spectroscopy of high-redshift Fermi blazars using Hβ and Mg II λ2800 lines. My previous project (published paper) involved spectroscopy of variable z<1.5 AGN, using their properties such as mass and brightness to study the black hole-host galaxy mass evolution.</p>
-										
-										<p>Beyond my research, I serve as a Head of Consulting for Elmseed Consulting and as the Events and Communications Chair for the Yale Astronomical Space and Student Society (YASSS). </p>
-
-										<p>I also love astrophotography, and the picture below is a stacked image I took at the Leitner Observatory here at Yale!</p>
-
-										<!-- <ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul> -->
-									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
-								</div>
-							</section>
-
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Research</h2>
-								</header>
-								<span class="image"><img src="images/Dumbbell_Nebula_Medium.png" alt="" /></span>
-								<ul class="features">
-									<li>
-										<!-- <span class="icon solid major style1 fa-code"></span> -->
-										<h3>Variable AGN Properties</h3>
-										<p>Analyzing properties of variability-selected z < 1.5 active galactic nuclei and studying their black hole mass – host mass relation. <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae0e64">Paper published to The Astrophysical Journal </a> </p> 
-									</li>
-									<li>
-										<!-- <span class="icon major style3 fa-copy"></span> -->
-										<h3>High z Fermi Blazars</h3>
-										<p>Near-infrared spectroscopy of high-redshift fermi blazars using Hβ and Mg II λ2800 lines. Project underway.</p>
-									</li>
-									<li>
-										<!-- <span class="icon major style5 fa-gem"></span> -->
-										<h3>Anomaly Detection using ML</h3>
-										<p>Developing and testing Hyrax, an astronomical machine learning framework and searching for unusual objects in new data. <a href="https://github.com/lincc-frameworks/hyrax">Project underway.</a></p>
-									</li>
-								</ul>
-								<!-- 
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-								-->
-							</section>
-
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Projects</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-
-								<!--
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-								-->
-
-							</section>
-
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Coursework</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								
-								<!-- 
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-								-->
-
-							</section>
-
 					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+					<div class="hero__visual" data-reveal>
+						<figure class="image-card image-card--portrait">
+							<img
+								src="images/diego-miura-headshot.jpg"
+								alt="Portrait of Diego Miura"
+							/>
+						</figure>
 
+						<div class="surface-card stack-note">
+							<p class="card-label">Current focus</p>
+							<ul class="clean-list">
+								<li>Machine learning for rare-object discovery with <a href="https://github.com/lincc-frameworks/hyrax" target="_blank" rel="noreferrer">Hyrax</a></li>
+								<li>Active Galactic Nuclei (AGN), Quasars, Blazars</li>
+								<li>Scientific tooling for surveys, FITS data, and catalogs</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="about">
+				<div class="site-shell about-layout">
+					<div class="section-head" data-reveal>
+						<h2>About</h2>
+					</div>
+
+					<div class="surface-card about-copy" data-reveal>
+						<p>
+							I am currently working with the DiRAC Institute at the University of 
+							Washington to develop and test Hyrax, an Astro-Machine Learning framework, 
+							by looking for anomalous and rare objects in large astronomical datasets.
+						</p>
+
+						<p>
+							I'm also a member of the Meg Urry Lab here at Yale, and my research involves 
+							doing near-infrared spectroscopy of high-redshift Fermi blazars using Hβ and 
+							Mg II λ2800 lines. My previous project (published paper) involved spectroscopy 
+							of variable z < 1.5 AGN, using their properties such as mass and brightness to 
+							study the black hole-host galaxy mass evolution.
+						</p>
+
+						<p> Beyond my research, I serve as a Head of Consulting for Elmseed Consulting and
+							as the Events and Communications Chair for the Yale Astronomical and Space 
+							Student Society (YASSS). 
+						</p>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="section section-muted" id="research">
+				<div class="site-shell">
+					<div class="section-head" data-reveal>
+						<h2>Research</h2>
+					</div>
+
+					<div class="card-grid research-grid">
+						<article class="surface-card research-card" data-reveal>
+							<div class="card-top">
+								<span class="pill">Current</span>
+								<p class="research-meta">DiRAC Institute, University of Washington</p>
+							</div>
+							<h3>Rare-object discovery with Hyrax</h3>
+							<p>
+								Train and benchmark models (CNNs,convolutional autoencoders/DCAE, SimCLR) 
+								for Hyrax – an astronomy ML framework – on ~6,000 realistic HSC-simulated 
+								IllustrisTNG subhalo images.
+							</p>
+							<ul class="detail-list">
+								<li>Methods: dimensionality reduction, clustering, model evaluation </li>
+								<li>
+									Link:
+									<a
+										href="https://github.com/lincc-frameworks/hyrax"
+										target="_blank"
+										rel="noreferrer"
+									>
+										Hyrax project
+									</a>
+								</li>
+							</ul>
+						</article>
+
+						<article class="surface-card research-card" data-reveal>
+							<div class="card-top">
+								<span class="pill">Current</span>
+								<p class="research-meta">Meg Urry Group, Yale</p>
+							</div>
+							<h3>High-redshift Fermi blazars in the near infrared</h3>
+							<p>
+								Using H-beta and Mg II 2800 line measurements to study
+								high-redshift Fermi blazars and extend the spectroscopic picture of
+								these sources.
+							</p>
+							<ul class="detail-list">
+								<li>Methods: NIR spectroscopy and line-based inference</li>
+							</ul>
+						</article>
+
+						<article class="surface-card research-card" data-reveal>
+							<div class="card-top">
+								<span class="pill">Published</span>
+								<p class="research-meta">Astrophysical Journal</p>
+							</div>
+							<h3>DAVOS: variability-selected AGN in DES deep fields</h3>
+							<p>
+								Studied variability-selected AGN at z &lt; 1.5, using mass and
+								brightness measurements to examine black hole and host galaxy mass
+								evolution.
+							</p>
+							<ul class="detail-list">
+								<li>
+									Paper: Dwarf Active Galactic Nuclei from Variability for the
+									Origins of Seeds
+								</li>
+								<li>
+									Links:
+									<a
+										href="assets/docs/Liu_2025_ApJ_994_162.pdf"
+										target="_blank"
+										rel="noreferrer"
+									>
+										PDF
+									</a>
+									|
+									<a
+										href="https://iopscience.iop.org/article/10.3847/1538-4357/ae0e64"
+										target="_blank"
+										rel="noreferrer"
+									>
+										Journal
+									</a>
+								</li>
+							</ul>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="projects">
+				<div class="site-shell">
+					<div class="section-head" data-reveal>
+						<h2>Selected Projects</h2>
+					</div>
+
+					<div class="card-grid projects-grid">
+						<article class="surface-card project-card" data-reveal>
+							<div class="card-top">
+								<span class="pill">Scientific Software</span>
+								<a
+									class="link-inline"
+									href="https://github.com/diegomiura/TNG-Tools"
+									target="_blank"
+									rel="noreferrer"
+								>
+									GitHub
+								</a>
+							</div>
+							<h3>TNG Tools</h3>
+							<p>
+								A Python CLI for fetching HSC FITS image URLs from IllustrisTNG,
+								downloading and splitting images by filter, and rebuilding enriched
+								catalogs for downstream analysis.
+							</p>
+							<ul class="meta-list" aria-label="TNG Tools topics">
+								<li>FITS pipelines</li>
+								<li>Catalog generation</li>
+								<li>Merger labels</li>
+							</ul>
+						</article>
+
+						<article class="surface-card project-card" data-reveal>
+							<div class="card-top">
+								<span class="pill">Time-Domain Analysis</span>
+								<div class="card-links">
+									<a
+										class="link-inline"
+										href="https://github.com/abheekda1/ogle-microlensing-automation"
+										target="_blank"
+										rel="noreferrer"
+									>
+										GitHub
+									</a>
+									<a
+										class="link-inline"
+										href="assets/docs/ASTR3560_Final_Presentation.pptx"
+										target="_blank"
+										rel="noreferrer"
+									>
+										Slides
+									</a>
+								</div>
+							</div>
+							<h3>OGLE Microlensing Automation</h3>
+							<p>
+								A course project with Abheek Dhawan applying UMAP and HDBSCAN to
+								1,496 OGLE 2025 microlensing events in order to group light-curve
+								morphologies and flag potentially exotic events without a large
+								labeled training set.
+							</p>
+							<ul class="meta-list" aria-label="OGLE topics">
+								<li>UMAP</li>
+								<li>HDBSCAN</li>
+								<li>Light-curve features</li>
+							</ul>
+						</article>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="section section-muted" id="leadership">
+				<div class="site-shell">
+					<div class="section-head" data-reveal>
+						<h2>Leadership</h2>
+					</div>
+
+					<div class="coursework-list" data-reveal>
+						<article class="surface-card course-item">
+							<h3>Elmseed Consulting</h3>
+							<p>
+								As Head of Consulting, I manage projects for local New Haven
+								organizations and businesses, including work connected to the City
+								of New Haven, the New Haven Free Public Library, and local
+								restaurants.
+							</p>
+						</article>
+
+						<article class="surface-card course-item">
+							<h3>YASSS</h3>
+							<p>
+								Through the Yale Astronomical Space and Student Society, I have
+								helped run mentorship programming, faculty-student events, and
+								public observing activities for the undergraduate astronomy
+								community.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="coursework">
+				<div class="site-shell">
+					<div class="section-head" data-reveal>
+						<h2>Coursework</h2>
+					</div>
+
+					<div class="coursework-list" data-reveal>
+						<article class="surface-card course-item">
+							<h3>Astrostatistics and Data Mining</h3>
+							<p>Bayesian methods, regression, and Python-based analysis of large datasets.</p>
+						</article>
+
+						<article class="surface-card course-item">
+							<h3>Physics of AI</h3>
+							<p>Statistical-physics approaches to modern machine learning and optimization.</p>
+						</article>
+
+						<article class="surface-card course-item">
+							<h3>Probability Theory</h3>
+							<p>Probabilistic modeling, distributions, central limit theorem, and Markov chains.</p>
+						</article>
+
+						<article class="surface-card course-item">
+							<h3>Mathematical Methods of Physics</h3>
+							<p>Differential equations, linear algebra, and complex analysis for physical modeling.</p>
+						</article>
+
+						<article class="surface-card course-item">
+							<h3>Physical Processes in Astronomy</h3>
+							<p>Fluid dynamics, collisionless dynamics, and radiative processes in astrophysics.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="site-footer">
+			<div class="site-shell site-footer__inner">
+				<p class="site-footer__credit">
+					&copy; <span id="year"></span> Diego Miura.
+				</p>
+
+				<div class="site-footer__links">
+					<a href="https://github.com/diegomiura" target="_blank" rel="noreferrer">GitHub</a>
+					<a href="https://www.linkedin.com/in/diego-miura/" target="_blank" rel="noreferrer">LinkedIn</a>
+				</div>
 			</div>
+		</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+		<script src="assets/js/main.js" defer></script>
 	</body>
 </html>
