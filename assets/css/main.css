@@ -547,7 +547,9 @@ p {
 .research-card a:hover,
 .research-card a:focus-visible,
 .site-footer__links a:hover,
-.site-footer__links a:focus-visible {
+.site-footer__links a:focus-visible,
+.site-footer__emails a:hover,
+.site-footer__emails a:focus-visible {
 	color: #163a5d;
 	outline: none;
 }
@@ -593,7 +595,22 @@ p {
 	gap: 1rem;
 }
 
+.site-footer__contact {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 0.45rem;
+}
+
+.site-footer__emails {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.35rem 1rem;
+	justify-content: flex-end;
+}
+
 .site-footer__links a,
+.site-footer__emails a,
 .site-footer__credit {
 	color: var(--text-soft);
 	text-decoration: none;
@@ -699,6 +716,12 @@ body.js-enabled [data-reveal].is-visible {
 	.site-footer__inner {
 		flex-direction: column;
 		align-items: flex-start;
+	}
+
+	.site-footer__contact,
+	.site-footer__emails {
+		align-items: flex-start;
+		justify-content: flex-start;
 	}
 }
 
