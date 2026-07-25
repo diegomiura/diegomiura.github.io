@@ -167,13 +167,22 @@ a:focus-visible {
 }
 
 .field-line {
-	display: flex;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
 	align-items: center;
-	justify-content: center;
 	gap: clamp(0.55rem, 1.5vw, 1.25rem);
-	margin: clamp(1.1rem, 2.5vw, 1.75rem) 0 0;
+	width: min(100%, 40rem);
+	margin: clamp(1.1rem, 2.5vw, 1.75rem) auto 0;
 	font-size: clamp(1rem, 1.7vw, 1.45rem);
 	letter-spacing: -0.025em;
+}
+
+.field-line > span:first-child {
+	text-align: right;
+}
+
+.field-line > span:last-child {
+	text-align: left;
 }
 
 .field-line__cross {
@@ -483,9 +492,14 @@ a:focus-visible {
 
 @media (max-width: 520px) {
 	.field-line {
-		align-items: center;
-		flex-direction: column;
+		grid-template-columns: 1fr;
 		gap: 0.15rem;
+		width: auto;
+	}
+
+	.field-line > span:first-child,
+	.field-line > span:last-child {
+		text-align: center;
 	}
 
 	.field-line__cross {
