@@ -343,6 +343,11 @@ a:focus-visible {
 	border-bottom: 0;
 }
 
+.entries--single-column .entry {
+	grid-template-columns: 1fr;
+	gap: 0;
+}
+
 .entry__meta {
 	color: var(--muted);
 	font-size: 0.71rem;
