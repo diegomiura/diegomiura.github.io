@@ -1,5 +1,5 @@
 import { cp, mkdir, rm, writeFile } from "node:fs/promises";
-import { join } from "node:path";
+import { dirname, join } from "node:path";
 
 const root = process.cwd();
 const dist = join(root, "dist");
@@ -21,7 +21,13 @@ const files = [
 	"site.webmanifest",
 ];
 
-const directories = ["assets", "images"];
+const assets = [
+	"assets/css/main.css",
+	"assets/css/fontawesome-all.min.css",
+	"assets/docs/Liu_2025_ApJ_994_162.pdf",
+	"assets/docs/APHY5750_Final_Project_The_Kernel_Trick.pdf",
+	"assets/docs/HIST1568_Final_Paper.pdf",
+];
 
 await rm(dist, { recursive: true, force: true });
 await mkdir(client, { recursive: true });
@@ -31,9 +37,15 @@ for (const file of files) {
 	await cp(join(root, file), join(client, file));
 }
 
-for (const directory of directories) {
-	await cp(join(root, directory), join(client, directory), { recursive: true });
+for (const asset of assets) {
+	const target = join(client, asset);
+	await mkdir(dirname(target), { recursive: true });
+	await cp(join(root, asset), target);
 }
+
+await cp(join(root, "assets/webfonts"), join(client, "assets/webfonts"), {
+	recursive: true,
+});
 
 const worker = `export default {
   async fetch(request, env) {
