@@ -1,567 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Diego Miura</title>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, viewport-fit=cover"
+			name="description"
+			content="Diego Miura - Yale astrophysics student working at the intersection of astrophysics and machine learning."
 		/>
-			<meta
-				name="description"
-				content="Diego Miura's personal website."
-			/>
+		<title>Diego Miura</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap"
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap"
 			rel="stylesheet"
 		/>
-			<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=20260522-2">
-			<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=20260522-2">
-			<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=20260522-2">
-			<link rel="icon" href="favicon.ico?v=20260522-2" sizes="any">
-			<link rel="shortcut icon" href="favicon.ico?v=20260522-2">
-			<link rel="manifest" href="site.webmanifest?v=20260522-2">
-
-		<script>
-			(function () {
-				try {
-					var savedTheme = localStorage.getItem("theme");
-					var theme = savedTheme === "dark" || savedTheme === "light"
-						? savedTheme
-						: window.matchMedia("(prefers-color-scheme: dark)").matches
-							? "dark"
-							: "light";
-
-					document.documentElement.setAttribute("data-theme", theme);
-				} catch (error) {
-					document.documentElement.setAttribute("data-theme", "light");
-				}
-			})();
-		</script>
-		<link rel="stylesheet" href="assets/css/main.css?v=20260522-2" />
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css?v=20260724-1" />
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+		<link rel="icon" href="favicon.ico" sizes="any" />
 	</head>
-	<body>
+	<body class="home-page">
 		<a class="skip-link" href="#main-content">Skip to content</a>
 
-		<header class="site-header">
-			<div class="site-shell site-header__inner">
-				<a class="site-mark" href="#top">
-					<img
-						class="site-mark__logo"
-						src="apple-touch-icon.png?v=20260522-2"
-						alt=""
-						width="34"
-						height="34"
-					/>
-					<span class="site-mark__text">Diego Miura</span>
-				</a>
-
-				<button
-					class="nav-toggle"
-					type="button"
-					aria-expanded="false"
-					aria-controls="site-nav"
-					aria-label="Toggle navigation"
+		<div class="home-layout">
+			<nav class="social-nav" aria-label="Social profiles">
+				<a
+					class="social-link"
+					href="https://github.com/diegomiura"
+					target="_blank"
+					rel="noreferrer"
+					aria-label="Diego Miura on GitHub"
 				>
-					<span class="nav-toggle__bars" aria-hidden="true"></span>
-					<span class="nav-toggle__label">Menu</span>
-				</button>
+					<span class="fab fa-github" aria-hidden="true"></span>
+					<span class="social-link__label">GitHub</span>
+				</a>
+				<a
+					class="social-link"
+					href="https://www.linkedin.com/in/diego-miura/"
+					target="_blank"
+					rel="noreferrer"
+					aria-label="Diego Miura on LinkedIn"
+				>
+					<span class="fab fa-linkedin-in" aria-hidden="true"></span>
+					<span class="social-link__label">LinkedIn</span>
+				</a>
+				<a
+					class="social-link"
+					href="https://orcid.org/"
+					target="_blank"
+					rel="noreferrer"
+					aria-label="ORCID"
+				>
+					<span class="fab fa-orcid" aria-hidden="true"></span>
+					<span class="social-link__label">ORCID</span>
+				</a>
+			</nav>
 
-				<nav class="site-nav" id="site-nav" aria-label="Primary">
-					<a href="#experience">Experience</a>
-					<a href="#research">Research</a>
-					<a href="#projects">Projects</a>
-					<a href="#leadership">Leadership</a>
-					<a href="#coursework">Coursework</a>
-					<button
-						class="theme-toggle"
-						type="button"
-						aria-pressed="false"
-						aria-label="Switch to dark theme"
-					>
-						<span class="theme-toggle__icon" aria-hidden="true">☾</span>
-					</button>
-				</nav>
-			</div>
-		</header>
-
-		<main id="main-content">
-			<section class="hero" id="top">
-				<div class="site-shell hero__layout">
-					<div class="hero__copy">
-						<h1>Diego Miura</h1>
-						<p class="intro-line">
-							Yale astrophysics student working on machine learning for astronomical
-							surveys, deepfake detection, and data-intensive research software.
-						</p>
-
-						<div class="button-row">
-							<a
-								class="button button--primary"
-								href="assets/docs/Diego_Miura_Resume.pdf"
-								target="_blank"
-								rel="noreferrer"
-							>
-								Download Resume
-							</a>
-							<a
-								class="button button--ghost"
-								href="https://github.com/diegomiura"
-								target="_blank"
-								rel="noreferrer"
-							>
-								GitHub
-							</a>
-							<a
-								class="button button--ghost"
-								href="https://www.linkedin.com/in/diego-miura/"
-								target="_blank"
-								rel="noreferrer"
-							>
-								LinkedIn
-							</a>
-						</div>
-
-						<ul class="hero-facts" aria-label="Academic highlights">
-							<li>Yale University, Class of 2027</li>
-							<li>B.S. Astrophysics, Data Science and Energy Studies Certificates</li>
-							<li>Incoming Deep Media ML Research Intern, Summer 2026</li>
-							<li>DiRAC Institute and Meg Urry Group</li>
-							<li>Published ApJ paper on variability-selected AGN</li>
-						</ul>
-					</div>
-
-					<div class="hero__visual">
-						<figure class="image-card image-card--portrait">
-							<img
-								src="images/diego-miura-headshot.jpg"
-								alt="Portrait of Diego Miura"
-							/>
-						</figure>
-					</div>
+			<main class="home-main" id="main-content">
+				<div class="home-intro">
+					<p class="institution">Yale University</p>
+					<h1>Diego Miura</h1>
+					<p class="field-line">
+						<span>Astrophysics</span>
+						<span class="field-line__cross" aria-hidden="true">&times;</span>
+						<span>Machine Learning</span>
+					</p>
 				</div>
-			</section>
 
-			<section class="section" id="experience">
-				<div class="site-shell">
-					<div class="section-head">
-						<h2>Experience</h2>
-					</div>
-
-					<div class="card-grid">
-						<article class="surface-card project-card">
-							<div class="card-top">
-								<p class="entry-type">Incoming</p>
-								<p class="research-meta">May 31 - August 1, 2026 | Remote</p>
-							</div>
-							<h3>Deep Media, ML Research Intern</h3>
-							<p>
-								Joining Deep Media's R&amp;D team to advance deepfake detection
-								capabilities through dataset engineering, model benchmarking, and
-								failure analysis across diverse media formats and synthetic
-								generation methods.
-							</p>
-							<ul class="detail-list">
-								<li>
-									Build Python, PyTorch, and FFmpeg pipelines for video and audio
-									ingestion, normalization, augmentation, and traceable metadata.
-								</li>
-								<li>
-									Train and compare CNN and Vision Transformer detection models
-									against diffusion- and GAN-generated synthetic media.
-								</li>
-								<li>
-									Audit datasets for bias, environmental variance, label
-									consistency, and corrupted or low-utility samples.
-								</li>
-							</ul>
-							<ul class="meta-list" aria-label="Deep Media internship topics">
-								<li>Deepfake Detection</li>
-								<li>PyTorch</li>
-								<li>FFmpeg</li>
-								<li>Computer Vision</li>
-								<li>Dataset QA</li>
-							</ul>
-						</article>
-					</div>
-				</div>
-			</section>
-
-			<section class="section section-muted" id="research">
-				<div class="site-shell">
-					<div class="section-head">
-						<h2>Research &amp; Publications</h2>
-					</div>
-
-					<div class="card-grid research-grid">
-						<article class="surface-card research-card">
-							<div class="card-top">
-								<p class="entry-type">Published</p>
-								<p class="research-meta">Astrophysical Journal</p>
-							</div>
-							<h3>DAVOS: variability-selected AGN in DES deep fields</h3>
-							<p>
-								Co-authored a peer-reviewed study characterizing 706
-								variability-selected AGN at z &lt; 1.5 and finding that their black
-								holes are systematically overmassive relative to local AGN scaling
-								relations.
-							</p>
-							<ul class="detail-list">
-								<li>
-									Paper: Dwarf Active Galactic Nuclei from Variability for the
-									Origins of Seeds
-								</li>
-								<li class="resource-links">
-									<span>Links:</span>
-									<a
-										class="link-inline"
-										href="assets/docs/Liu_2025_ApJ_994_162.pdf"
-										target="_blank"
-										rel="noreferrer"
-									>
-										PDF
-									</a>
-									<a
-										class="link-inline"
-										href="https://iopscience.iop.org/article/10.3847/1538-4357/ae0e64"
-										target="_blank"
-										rel="noreferrer"
-									>
-										Journal
-									</a>
-								</li>
-							</ul>
-						</article>
-
-						<article class="surface-card research-card">
-							<div class="card-top">
-								<p class="entry-type">Current</p>
-								<p class="research-meta">DiRAC Institute, University of Washington</p>
-							</div>
-							<h3>Rare-object discovery with Hyrax</h3>
-							<p>
-								Lead research applying Hyrax, an open-source astronomy ML
-								framework, to identify galaxy mergers in HSC-realistic
-								IllustrisTNG simulations, training and benchmarking CNN and
-								self-supervised models on 15,000+ images.
-							</p>
-							<ul class="detail-list">
-								<li>Methods: CNNs, self-supervised learning, dimensionality reduction, clustering, model evaluation</li>
-								<li>Compute: large-scale training on the NCSA Delta supercomputer</li>
-								<li>Co-authored Hyrax paper currently in peer review</li>
-								<li class="resource-links">
-									<span>Links:</span>
-									<a
-										class="link-inline"
-										href="https://github.com/lincc-frameworks/hyrax"
-										target="_blank"
-										rel="noreferrer"
-									>
-										Hyrax Project
-									</a>
-																		<a
-										class="link-inline"
-										href="https://arxiv.org/abs/2605.18959"
-										target="_blank"
-										rel="noreferrer"
-									>
-										Hyrax Paper
-									</a>
-								</li>
-							</ul>
-						</article>
-
-						<article class="surface-card research-card">
-							<div class="card-top">
-								<p class="entry-type">Current</p>
-								<p class="research-meta">Meg Urry Group, Yale</p>
-							</div>
-							<h3>High-redshift Fermi blazars in the near infrared</h3>
-							<p>
-								Using H-beta and Mg II 2800 line measurements to study
-								high-redshift Fermi blazars and extend the spectroscopic picture of
-								these sources.
-							</p>
-							<ul class="detail-list">
-								<li>Methods: NIR spectroscopy and line-based inference</li>
-							</ul>
-						</article>
-					</div>
-				</div>
-			</section>
-
-			<section class="section" id="projects">
-				<div class="site-shell">
-					<div class="section-head">
-						<h2>Selected Projects</h2>
-					</div>
-
-					<div class="card-grid projects-grid">
-						<article class="surface-card project-card">
-							<h3>TNG Tools</h3>
-							<p>
-								A Python CLI for fetching HSC FITS image URLs from IllustrisTNG,
-								downloading and splitting images by filter, and rebuilding enriched
-								catalogs for downstream analysis.
-							</p>
-							<a
-								class="link-inline"
-								href="https://github.com/diegomiura/TNG-Tools"
-								target="_blank"
-								rel="noreferrer"
-							>
-								GitHub
-							</a>
-						</article>
-
-						<article class="surface-card project-card">
-							<h3>OGLE Microlensing Automation</h3>
-							<p>
-								A course project with Abheek Dhawan applying UMAP and HDBSCAN to
-								1,496 OGLE 2025 microlensing events in order to group light-curve
-								morphologies and flag potentially exotic events without a large
-								labeled training set.
-							</p>
-							<div class="card-links">
-								<a
-									class="link-inline"
-									href="https://github.com/abheekda1/ogle-microlensing-automation"
-									target="_blank"
-									rel="noreferrer"
-								>
-									GitHub
-								</a>
-								<a
-									class="link-inline"
-									href="assets/docs/ASTR3560_Final_Presentation.pptx"
-									target="_blank"
-									rel="noreferrer"
-								>
-									Slides
-								</a>
-							</div>
-						</article>
-					</div>
-
-				</div>
-			</section>
-
-			<section class="section section-muted" id="leadership">
-				<div class="site-shell">
-					<div class="section-head">
-						<h2>Leadership</h2>
-					</div>
-
-						<div class="coursework-list">
-							<article class="surface-card course-item">
-								<h3>Elmseed Consulting</h3>
-								<p class="card-role">Head of Consulting</p>
-								<p>
-									Oversee 3 concurrent client engagements from problem structuring
-									through final delivery while maintaining 100% on-time delivery
-									across active projects.
-								</p>
-								<ul class="detail-list">
-									<li>Standardized slide deck and workplan review processes, reducing project turnaround by 10 days compared to last year.</li>
-									<li>Co-developed onboarding workshops on structured problem-solving and slide writing, training 20+ analysts across two semesters.</li>
-									<li>Launched and run Elmseed's High School Consulting Fellowship for 30 students from 12 schools, including 15 international participants.</li>
-								</ul>
-							</article>
-
-							<article class="surface-card course-item">
-								<h3>Yale Astronomical and Space Student Society</h3>
-								<p class="card-role">Founder &amp; Project Chair</p>
-								<p>
-									Founded and help lead YASSS, growing organization reach from 50
-									to 500+ students through first-year outreach and New Haven
-									community programming.
-								</p>
-								<ul class="detail-list">
-									<li>Delivered 40+ astronomy events over two years, including faculty-student dinners, meteor-shower nights, northern-lights observing, and local school outreach.</li>
-									<li>Launched and manage an underclassmen-upperclassmen mentorship program, doubling participation from 5 to 10 mentees.</li>
-									<li>Maintained 100% year-over-year mentorship retention while broadening access for students new to astronomy.</li>
-								</ul>
-							</article>
-						</div>
-				</div>
-			</section>
-
-			<section class="section" id="coursework">
-				<div class="site-shell">
-					<div class="section-head">
-						<h2>Coursework</h2>
-					</div>
-
-					<div class="coursework-groups">
-						<section
-							class="coursework-group"
-							aria-labelledby="coursework-astronomy"
-						>
-							<h3 class="coursework-category" id="coursework-astronomy">
-								Astronomy & Space Science
-							</h3>
-							<div class="coursework-list">
-								<article class="surface-card course-item">
-									<h3>ASTR 6000: Cosmology</h3>
-									<p>
-										Modern Cosmology: Homogeneous evolution, the evolution of
-										perturbations, and discussion of observations.
-									</p>
-									<a
-										class="link-inline"
-										href="https://github.com/diegomiura/Cosmology-Final-Project"
-										target="_blank"
-										rel="noreferrer"
-									>
-										Final Project: CMB TT Phase Shift Reconstruction
-									</a>
-								</article>
-
-								<article class="surface-card course-item">
-									<h3>ASTR 4000: Orbital Mechanics</h3>
-									<p>
-										Introduction to spacecraft orbit mechanics, astrodynamics, and
-										the design and implementation of spaceflight maneuvers for
-										Earth-orbiting satellites and inter-planetary probes.
-									</p>
-									<a
-										class="link-inline"
-										href="https://drive.google.com/file/d/1AKPPu_lB-i7tiCOvzmf1HJJlVrB3SYsA/view?usp=sharing"
-										target="_blank"
-										rel="noreferrer"
-									>
-										Final Project Video
-									</a>
-								</article>
-
-								<article class="surface-card course-item">
-									<h3>ASTR 3560: Astrostatistics and Data Mining</h3>
-									<p>Bayesian methods, regression, and Python-based analysis of large datasets.</p>
-									<a
-										class="link-inline"
-										href="https://github.com/diegomiura/ASTR3560"
-										target="_blank"
-										rel="noreferrer"
-									>
-										PSETs GitHub Repo
-									</a>
-									<a
-										class="link-inline"
-										href="https://github.com/abheekda1/ogle-microlensing-automation"
-										target="_blank"
-										rel="noreferrer"
-									>
-										OGLE Microlensing Final Project
-									</a>
-								</article>
-
-								<article class="surface-card course-item">
-									<h3>ASTR 320: Physical Processes in Astronomy</h3>
-									<p>Fluid dynamics, collisionless dynamics, and radiative processes in astrophysics.</p>
-									<a
-										class="link-inline"
-										href="https://scientific-marquess-2e1.notion.site/Notes-1b48c74aed1180a487c8debb596e4f48"
-										target="_blank"
-										rel="noreferrer"
-									>
-										Class Notes
-									</a>
-								</article>
-							</div>
-						</section>
-
-						<section
-							class="coursework-group"
-							aria-labelledby="coursework-quantitative"
-						>
-							<h3 class="coursework-category" id="coursework-quantitative">
-								Physics, AI & Quantitative Methods
-							</h3>
-							<div class="coursework-list">
-								<article class="surface-card course-item">
-									<h3>APHY 5750: Physics of AI</h3>
-									<p>Statistical-physics approaches to modern machine learning and optimization.</p>
-									<div class="card-links">
-										<a
-											class="link-inline"
-											href="assets/docs/APHY5750_Final_Project_The_Kernel_Trick.pdf"
-											target="_blank"
-											rel="noreferrer"
-										>
-											Final Project Paper
-										</a>
-										<a
-											class="link-inline"
-											href="https://github.com/diegomiura/Random-Feature-Models"
-											target="_blank"
-											rel="noreferrer"
-										>
-											GitHub Repo
-										</a>
-									</div>
-								</article>
-
-								<article class="surface-card course-item">
-									<h3>S&DS 241: Probability Theory</h3>
-									<p>Probabilistic modeling, distributions, central limit theorem, and Markov chains.</p>
-								</article>
-
-								<article class="surface-card course-item">
-									<h3>PHYS 301: Mathematical Methods of Physics</h3>
-									<p>Differential equations, linear algebra, and complex analysis for physical modeling.</p>
-								</article>
-							</div>
-						</section>
-
-						<section
-							class="coursework-group"
-							aria-labelledby="coursework-humanities"
-						>
-							<h3 class="coursework-category" id="coursework-humanities">
-								Humanities & Society
-							</h3>
-							<div class="coursework-list coursework-list--single">
-								<article class="surface-card course-item">
-									<h3>HIST 1568: Political Violence, Citizenship, and Democracy in Latin America</h3>
-									<p>
-										This course examines how political violence has shaped
-										citizenship, democracy, exclusion, and collective action in
-										Latin America from the nineteenth century to the present.
-									</p>
-									<a
-										class="link-inline"
-										href="assets/docs/HIST1568_Final_Paper.pdf"
-										target="_blank"
-										rel="noreferrer"
-									>
-										Final Paper
-									</a>
-								</article>
-							</div>
-						</section>
-					</div>
-				</div>
-			</section>
-
-		</main>
-
-		<footer class="site-footer">
-			<div class="site-shell site-footer__inner">
-				<p class="site-footer__credit">
-					&copy; <span id="year"></span> Diego Miura.
+				<p class="currently">
+					<span class="currently__label">Currently</span>
+					<span>ML Research Intern at</span>
+					<a href="https://deepmedia.ai/" target="_blank" rel="noreferrer">
+						Deep Media AI
+						<span class="fas fa-arrow-up" aria-hidden="true"></span>
+					</a>
 				</p>
+			</main>
 
-				<div class="site-footer__contact">
-					<div class="site-footer__emails">
-						<a href="mailto:miuradiego05@gmail.com">miuradiego05@gmail.com</a>
-						<a href="mailto:diego.miura@yale.edu">diego.miura@yale.edu</a>
-					</div>
-				</div>
-			</div>
-		</footer>
+			<nav class="page-nav" aria-label="Explore Diego's work">
+				<a href="publications.html">
+					<span>Publications</span>
+					<span class="fas fa-arrow-right" aria-hidden="true"></span>
+				</a>
+				<a href="leadership.html">
+					<span>Leadership</span>
+					<span class="fas fa-arrow-right" aria-hidden="true"></span>
+				</a>
+				<a href="projects.html">
+					<span>Projects</span>
+					<span class="fas fa-arrow-right" aria-hidden="true"></span>
+				</a>
+				<a href="class-notes.html">
+					<span>Class Notes</span>
+					<span class="fas fa-arrow-right" aria-hidden="true"></span>
+				</a>
+			</nav>
 
-		<script src="assets/js/main.js?v=20260522" defer></script>
+			<footer class="home-footer">
+				<a href="mailto:miuradiego05@gmail.com">miuradiego05@gmail.com</a>
+				<span aria-hidden="true"></span>
+				<a href="mailto:diego.miura@yale.edu">diego.miura@yale.edu</a>
+			</footer>
+		</div>
 	</body>
 </html>
