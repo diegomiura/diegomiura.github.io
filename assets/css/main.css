@@ -68,7 +68,7 @@ a:focus-visible {
 
 .home-layout {
 	display: grid;
-	grid-template-columns: minmax(7.5rem, 0.62fr) minmax(24rem, 2.7fr) minmax(12rem, 0.8fr);
+	grid-template-columns: minmax(10rem, 1fr) minmax(24rem, 2.5fr) minmax(10rem, 1fr);
 	grid-template-rows: minmax(0, 1fr) auto;
 	min-height: 100vh;
 	min-height: 100svh;
@@ -141,10 +141,12 @@ a:focus-visible {
 	grid-row: 1;
 	padding: 3rem clamp(1rem, 3vw, 4rem);
 	text-align: center;
+	width: 100%;
 }
 
 .home-intro {
 	position: relative;
+	text-align: center;
 }
 
 .institution {
@@ -232,42 +234,24 @@ a:focus-visible {
 .page-nav {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-end;
 	grid-column: 3;
 	grid-row: 1;
-	gap: 0.4rem;
+	gap: 0.3rem;
+	text-align: right;
 }
 
 .page-nav a {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 1.5rem;
-	padding: 0.95rem 0;
-	border-bottom: 1px solid var(--line);
+	display: inline-block;
+	padding: 0.7rem 0;
 	font-size: clamp(0.92rem, 1.2vw, 1.08rem);
 	text-decoration: none;
-	transition: color 160ms ease, padding 160ms ease;
-}
-
-.page-nav a:first-child {
-	border-top: 1px solid var(--line);
-}
-
-.page-nav .fas {
-	color: var(--blue);
-	font-size: 0.7rem;
-	transition: transform 160ms ease;
+	transition: color 160ms ease;
 }
 
 .page-nav a:hover,
 .page-nav a:focus-visible {
 	color: var(--blue);
-	padding-left: 0.35rem;
-}
-
-.page-nav a:hover .fas,
-.page-nav a:focus-visible .fas {
-	transform: translateX(0.3rem);
 }
 
 .home-footer {
@@ -276,7 +260,7 @@ a:focus-visible {
 	justify-content: center;
 	grid-column: 1 / -1;
 	grid-row: 2;
-	gap: 1rem;
+	gap: clamp(3rem, 10vw, 8rem);
 	color: var(--muted);
 	font-size: clamp(0.75rem, 1vw, 0.88rem);
 }
@@ -288,12 +272,6 @@ a:focus-visible {
 .home-footer a:hover {
 	color: var(--blue);
 	text-decoration: underline;
-}
-
-.home-footer span {
-	width: clamp(2rem, 8vw, 7rem);
-	height: 1px;
-	background: var(--line);
 }
 
 /* Subpages */
@@ -547,10 +525,12 @@ a:focus-visible {
 	}
 
 	.page-nav {
+		align-items: stretch;
 		grid-column: 1;
 		grid-row: 3;
 		width: min(100%, 28rem);
 		margin-inline: auto;
+		text-align: center;
 	}
 
 	.home-footer {
@@ -558,10 +538,6 @@ a:focus-visible {
 		grid-column: 1;
 		grid-row: 4;
 		gap: 0.25rem;
-	}
-
-	.home-footer span {
-		display: none;
 	}
 
 	.site-header__inner {
